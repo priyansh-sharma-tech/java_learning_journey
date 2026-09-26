@@ -44,6 +44,27 @@ class Student{
         this.rollNumber = rollNumber;
         this.college = college;
     }
+     // Channing of the above Methods----> and replace all instance methods variables by--->
+    // all cunstroctors are calling to the last cunstroctor:
+    Student(){
+    this("unknown", 0, 0, "unknown");
+    }
+    Student(String name){
+        this(name, 0, 0, "unknown");
+    }
+    Student(String name, int age){
+       this(name, age, 0, "unknown");
+    }
+    Student(String name, int age, int rollNumber){
+        this(name, age, rollNumber, "unknown");
+    }
+    Student(String name, int age, int rollNumber, String college){
+        this.name = name;
+        this.age = age; 
+        this.rollNumber = rollNumber;
+        this.college = college;
+    }
+
 
 }
     
